@@ -1,12 +1,12 @@
-# python
-<
+<# python>
+
 import csv
 import numpy as np
 from sklearn.svm import SVR
 import matplotlib.pyplot as plt
->
-# Read stock csv file
-<
+
+<# Read stock csv file>
+
 def get_data(filename):
 	with open(filename, 'r') as csvfile:
 		csvFileReader = csv.reader(csvfile)
@@ -15,4 +15,4 @@ def get_data(filename):
 			dates.append(int(row[0].split('-')[0])) #
 			prices.append(float(row[1]))
 	return
->
+
