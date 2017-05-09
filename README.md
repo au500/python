@@ -7,6 +7,8 @@ import matplotlib.pyplot as plt
 
 <# Read stock csv file>
 
+dates = []
+prices = []
 def get_data(filename):
 	with open(filename, 'r') as csvfile:
 		csvFileReader = csv.reader(csvfile)
@@ -16,3 +18,6 @@ def get_data(filename):
 			prices.append(float(row[1]))
 	return
 
+get_data('aapl.csv') # calling get_data method by passing the csv file to it
+#print "Dates- ", dates
+#print "Prices- ", prices
